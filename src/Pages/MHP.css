@@ -1,0 +1,28 @@
+.card-mhp{
+    border: 1px solid black; 
+    border-radius: 8px; 
+    padding: 16px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col-mhp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+}
+.card-img-top{
+    /* width: 3vw; */
+    width: 100%; /* Ensures the image fills the container's width */
+  max-width: 100%; /* Added to ensure the image doesn't exceed its original size */
+  height: auto;
+}

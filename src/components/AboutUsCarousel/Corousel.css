@@ -1,0 +1,58 @@
+.carousel-main{
+    margin-top: -25px !important;
+}
+.text-about{
+   
+    text-align: center;
+    z-index: 10;
+}
+.image-aboutus{
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    width: 50%;
+    height: 50%;
+}
+@media (max-width: 768px){
+    .image-aboutus{
+        display: block;  
+        margin-left: auto;  
+        margin-right: auto;  
+        width: 60%;
+        height: 60%;
+    }
+    .text-about{
+        font-size: 1rem;
+        line-height: 1.3;
+        padding: 0px 30px;
+    }
+}
+@media (max-width: 500px){
+    .image-aboutus{
+        display: block;  
+        margin-left: auto;  
+        margin-right: auto;  
+        width: 60%;
+        height: 60%;
+    }
+    .text-about{
+        font-size: 0.7rem;
+        line-height: 1.2;
+        padding: 0px 35px;
+    }
+
+}
+.swiper-button-prev {
+    opacity: 0.3;
+  }
+  
+  .swiper-button-prev:hover {
+    opacity: 0.3;
+  }
+.swiper-button-next {
+    opacity: 0.3;
+  }
+  
+  .swiper-button-next.carousel-main {
+    opacity: 0.3;
+  }

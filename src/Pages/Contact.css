@@ -1,0 +1,121 @@
+form{
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+}
+form .form-control{
+    
+    border: none;
+}
+form input , form textarea , form select{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 17px;
+    outline: none;
+}
+form textarea{
+    height: 120px;
+}
+font input:hover,form textarea:hover{
+    border: 1px solid var(--main-color);
+    transition: .2s ease-in-out;
+    background-color: #f6f6f6;
+}
+.form p{
+    color: red;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: bisque;
+    border: 1px solid red;
+    padding: 0px 5px;
+    text-transform: uppercase ;
+}
+form button{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background-color: var(--main-color) !important;
+    border-radius: 4px !important; 
+    border: 1px solid var(--main-color) !important;
+    color: #fff;
+    font-weight:bold ;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+form button:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    transition: .3s ease-in-out;
+
+}
+.side{
+    background: url('https://imagizer.imageshack.com/v2/1600x1200q70/922/BsMpHh.jpg') center;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+    /* padding: 15px; */
+    margin-top: 10px;
+   
+}
+.side .overlay{
+    background-color: var(--main-color);
+    opacity: .7;
+    padding: 25px 20px;
+    border-radius: 8px;
+}
+.side .overlay h3{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.side .overlay li{
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.side .overlay li svg{
+    margin-right: 15px;
+
+}
+.side .overlay .hr{
+    width: 70%;
+    color: #fff;
+    background-color: #fff;
+}
+.side .overlay p{
+    color: #fff;
+    font-size: 17px;
+    margin: 10px 0px;
+}
+.side .overlay ul{
+    padding: 0px;
+}
+.side .overlay ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right :10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.side .overlay ul li svg{
+    color: black;
+    text-align: center !important;
+    padding-left: 10px;
+}
+

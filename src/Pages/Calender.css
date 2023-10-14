@@ -1,0 +1,22 @@
+.app-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .add-availability-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #007bff;
+  }
+  
+  .add-availability-btn svg {
+    margin-right: 5px;
+  }
+  

@@ -1,0 +1,124 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dashboard container styles */
+  .dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dashboard navigation styles */
+  .dashboard-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .dashboard-nav li {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  
+  .dashboard-nav li.active {
+    font-weight: bold;
+    color: green;
+    cursor: default;
+  }
+  
+  /* Patients section styles */
+  .patients-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .patient-list {
+    flex: 1;
+  }
+  
+  .patient-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .patient-list li {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .patient-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .patient-list .selected-patient {
+    /* background-color: green; */
+    color: green;
+    font-weight: bold;
+  }
+  
+  .patient-details {
+    flex: 2;
+  }
+  
+  .patient-details h2 {
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .patient-details p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Appointments section styles */
+  .appointments-section {
+    text-align: center;
+  }
+  
+  .appointments-section .react-calendar {
+    max-width: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  .appointments-section .react-calendar__tile {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .appointments-section .react-calendar__tile:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .appointments-section .react-calendar__tile--now {
+    background-color: green;
+    color: white;
+  }
+  
+  .appointments-section .react-calendar__tile--active {
+    background-color: green;
+    color: white;
+  }
+  
