@@ -30,7 +30,7 @@ const Contact =()=>{
                     <li><FontAwesomeIcon icon={faEnvelope}/>Email & Phone</li>
                     {/* <hr/> */}
                     <p className="form p">admin@Cognify.org</p>
-                    <p className="form p">+91 9041315111</p>
+                    <p className="form p">+91 8890118309</p>
                     <li><FontAwesomeIcon icon={faGlobe}/>Follow Us</li>
                     {/* <hr/> */}
                     <ul>
