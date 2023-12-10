@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.css'
-import { Navbar, Container, NavDropdown, Collapse, Nav } from 'react-bootstrap';
+import { Navbar, Container,Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -40,28 +40,29 @@ const Navbars = () => {
   return (
     <>
       <Navbar expand="lg">
-        <Container>
+        <Container className="main-container">
           <Navbar.Brand href="#home">
-          <img className="logo" src={'https://imagizer.imageshack.com/img924/1631/IxfKHq.png'} />
+          <img className="logo" src={'https://imagizer.imageshack.com/img924/1631/IxfKHq.png'} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+          <Navbar.Collapse className="Basic-Navbar">
+            <Nav className="Nav-links">
               <NavLink to="/home" className="active">Home</NavLink>
               <NavLink to="/team">Team</NavLink>
               <NavLink href="http://localhost:8000/blogs/all-blogs/">Blog</NavLink>
               <NavLink to="/contact">Contact us</NavLink>
               <NavLink to="/explore">Explore</NavLink>
-              <NavLink href="#blog">Search <FontAwesomeIcon icon={faSearch} /></NavLink>
-              {isLoggedIn ? (
-                <button onClick={handleLogout}>Logout</button>
-                
-                ) : (
-                  <Link to="/Login"><button className="sign">Sign Up</button></Link>
-                  
-                  )}
-                  <button className="book" onClick={MHP}>Book Now!</button>
+              <NavLink href="#blog" id="search-icon">Search <FontAwesomeIcon id="s-icon" icon={faSearch} /></NavLink> 
             </Nav>
+            <div className="Nav-btn">
+            {isLoggedIn ? (
+              <button onClick={handleLogout}>Logout</button>  
+              ) : (
+                <button id="Sign-up-btn"><Link to="/Login">Sign Up</Link></button>
+                
+                )}
+                <button id="book-Now" onClick={MHP}>Book Now!</button>
+                </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
